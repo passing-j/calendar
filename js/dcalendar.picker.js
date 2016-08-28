@@ -43,7 +43,7 @@ if (typeof jQuery === 'undefined') { throw new Error('DCalendar.Picker: This plu
 			this.maxDate = this.calendar.prev().data('maxdate');
 			
 			if(options.mode === 'calendar')
-				this.tHead = $('<thead><tr><th id="prev">&lsaquo;</th><th colspan="5" id="currM"></th><th id="next">&rsaquo;</th></tr><tr><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr></thead>');
+				this.tHead = $('<thead><tr><th id="prev">&lsaquo;</th><th colspan="5" id="currM"></th><th id="next">&rsaquo;</th></tr><tr><th>日</th><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th></tr></thead>');
 			else if (options.mode === 'datepicker')
 				this.tHead = $('<thead><tr><th id="prev">&lsaquo;</th><th colspan="5" id="currM"></th><th id="next">&rsaquo;</th></tr><tr><th>日</th><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th></tr></thead>');
 		//	this.tHead.find('#currM').text(months[this.today.getMonth()] +" " + this.today.getFullYear());
